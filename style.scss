@@ -1,10 +1,24 @@
+//Mixin
+$breakpoint-extra-small: 480px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px;
+
+@mixin responsive($max-screen-size){
+    @media screen and (max-width: $max-screen-size){
+        @content;
+    }
+}
+
 /* General Styles */
 $color1: #333;
 $color2: #ff7e5f;
 $color3: white;
 $font1:Arial, sans-serif;
 $shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-$padding20: 20px;
+$padding20: 20px; 
+
+
 body {
     font-family: $font1;
     color: $color1;
@@ -36,13 +50,13 @@ h2 {
         li {
             display: inline-block;
             margin: 0 10px;
-    
+            
         }
         a {
             text-decoration: none;
             font-weight: bold;
             &:hover{
-                color:color2;
+                color: $color2;
             }
         }
     }
@@ -114,7 +128,7 @@ h2 {
 }
 
 /* Responsive */
-@media screen and (max-width: 992px) {
+@include responsive($breakpoint-medium){
     .card-list {
         flex-direction: column;
         align-items: center;
@@ -122,6 +136,20 @@ h2 {
     }
     .card {
         width: 80%;
+    }
+}
+@include responsive($breakpoint-small){
+    .main{
+        flex-direction: column;
+        text-align: center;
+
+        .content{
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            margin-top: 20px;
+        }
     }
 }
 

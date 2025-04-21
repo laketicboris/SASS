@@ -37,7 +37,7 @@ h2 {
   font-weight: bold;
 }
 .navbar .nav-links a:hover {
-  color: color2;
+  color: #ff7e5f;
 }
 
 /* Primary Button */
@@ -118,6 +118,19 @@ h2 {
   }
   .card {
     width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main .content {
+    width: 100%;
+  }
+  .main img {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
