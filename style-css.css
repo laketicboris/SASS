@@ -1,13 +1,19 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
+/* Primary Button */
+.primary-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
 }
-
-h2 {
-  font-size: 32px;
+.primary-btn:hover {
+  box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
 }
 
 /* Navbar */
@@ -40,21 +46,15 @@ h2 {
   color: #ff7e5f;
 }
 
-/* Primary Button */
-.primary-btn {
-  display: inline-block;
-  padding: 15px 30px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
-.primary-btn:hover {
-  box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
+
+h2 {
+  font-size: 32px;
 }
 
 /* Main Section */
